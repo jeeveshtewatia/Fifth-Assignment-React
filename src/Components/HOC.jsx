@@ -1,4 +1,6 @@
 import React from "react";
+import "./ProductList.css";
+
 const products = [
   { productName: "Jeevesh", price: 100 },
   { productName: "Ajay", price: 9999 },
@@ -25,7 +27,7 @@ const withSearch = (WrappedComponent) => {
     render() {
       const updatedProducts = this.filterProducts();
       return (
-        <div>
+        <div className="search">
           <input type="text" onChange={this.updateSearch} />
           <WrappedComponent products={updatedProducts}></WrappedComponent>
         </div>

@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  background-color: chocolate;
+}
+
+p {
+  background-color: darkkhaki;
 }
 
 .App-logo {
@@ -32,6 +46,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
